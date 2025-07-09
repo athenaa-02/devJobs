@@ -1,0 +1,13 @@
+header{
+    background-image: url(../../../public/Triangle.svg);
+    height: 161px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    margin: 0;
+}
