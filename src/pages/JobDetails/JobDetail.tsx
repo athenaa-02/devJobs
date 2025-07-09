@@ -1,9 +1,9 @@
 import { Link, useParams } from "react-router-dom";
 import { jobsInfo } from "../../data/jobs";
 import CompanySite from "../../components/buttons/CompanySite/CompanySite";
-// import Apply from "../../components/buttons/ApplyNow/Apply";
 import AboutJob from "../../components/AboutJob/AboutJob";
 import "./JobDetail.css";
+import Jobs from "../../components/Jobs/Jobs";
 
 function JobDetail() {
   const { id } = useParams();
@@ -16,7 +16,7 @@ function JobDetail() {
     <>
       <section className="main">
         <div className="companyHeader">
-          <img src={`../../../src${job.logo}`} alt="" />
+          <img src={`../../../src${job.logo}`} style={{backgroundColor:job.logoBackground}} alt="" />
           <div className="inner">
             <Link to={job.website}>
               <h3>{job.company}</h3>
@@ -41,7 +41,7 @@ function JobDetail() {
           reqItems={job.requirements.items}
           role={job.role.content}
           roleItems={job.role.items}
-          
+
         ></AboutJob>
       </section>
     </>
