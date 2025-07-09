@@ -4,14 +4,15 @@ import "./AboutJob.css";
 function AboutJob(props: any) {
   return (
     <>
+    <div className="wholeInfo">
       <section className="heading">
-        <span>{props.postedAt}</span>
+        <span className="postedAt">{props.postedAt}</span>
         <span>{props.contract}</span>
-        <div>
-          <h2>{props.position}</h2>
+        <div className="wrapper">
+          <h2 className="position">{props.position}</h2>
           <Apply></Apply>
         </div>
-        <p className="country">{props.location}</p>
+        <p className="location">{props.location}</p>
       </section>
 
       <section className="text">
@@ -19,7 +20,7 @@ function AboutJob(props: any) {
         <h4>Requirements</h4>
         <article>{props.requirements}</article>
         {props.reqItems.map((item: String) => (
-          <li>{item}</li>
+          <li className="req">{item}</li>
         ))}
         <h5>What You Will Do</h5>
         <article>{props.role}</article>
@@ -29,6 +30,7 @@ function AboutJob(props: any) {
           ))}
         </ol>
       </section>
+      </div>
     </>
   );
 }

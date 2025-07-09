@@ -1,56 +1,64 @@
-main{
-    width: 100%;
-    display: flex;
-    gap: 65px;
-    margin-top: 105px;
-    padding: 0 165px;
-    height: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
+main {
+  width: 100%;
+  display: flex;
+  gap: 65px;
+  margin-top: 105px;
+  padding: 0 165px;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.jobPreview{
-    background-color: white;
-    width: 350px;
-    height: 228px;
-    padding: 30px 25px 25px 25px;
-    border-radius: 6px;
-    position: relative;
-    cursor: pointer;
-    transition: all 400ms;
+.jobPreview {
+  background-color: white;
+  width: 350px;
+  height: 228px;
+  padding: 30px 25px 25px 25px;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+  transition: all 400ms;
 }
-.jobPreview:hover{
-    transform: scale(1.03);
-}
-
-.innerBox{
-width: fit-content;
+.jobPreview:hover {
+  transform: scale(1.03);
 }
 
-span{
-    font-weight: 400;
-    font-size: 16px;
-    color: #6E8098;
+.innerBox {
+  width: fit-content;
 }
 
-p.generalInfo{
-    display: flex;
-    gap: 28px;
-
-}
-p.country{
-    color: #5964E0;
-    font-size: 14px;
-    font-weight: 700;
-    margin: 40px 0 0 0;
+span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #6e8098;
+  
 }
 
-img{
-    position: absolute;
-    top: -25px;
+p.generalInfo {
+  display: flex;
+  gap: 28px;
+}
+p.country {
+  color: #5964e0;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 40px 0 0 0;
 }
 
-h2{
-    font-weight: 700;
-    font-size: 20px;
+img.previewImg {
+  position: absolute;
+  top: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: #19202D;
 }

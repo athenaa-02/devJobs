@@ -19,12 +19,64 @@ section.main {
   margin-top: -30px;
 }
 
-img {
+img.logo {
   width: 140px;
   height: 140px;
   position: absolute;
   top: 0;
 }
-section.aboutJob{
-  
+section.aboutJob {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+div.wholeInfo {
+  border-radius: 6px;
+  background-color: white;
+  width: 730px;
+  margin: 32px;
+  padding: 48px;
+}
+span.postedAt {
+  margin-right: 20px;
+}
+
+h2.position{
+font-size: 28px;
+font-weight: 700;
+}
+div.wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+p.location{
+  color: #5964E0;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+section.text{
+  margin-top: 40px;
+}
+article, li{
+  font-weight: 400;
+  size: 16px;
+  line-height: 26px;
+  color: #6E8098;
+}
+
+h4, h5{
+  font-weight: 700;
+  font-size: 20px;
+  color: #19202D;
+  margin: 40px 0 28px 0;
+}
+li.req, ol{
+  margin-top: 24px;
+}
+li::marker{
+background-color: #5964E0;
+color: #5964E0;
 }
