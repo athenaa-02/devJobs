@@ -1,0 +1,27 @@
+div.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  margin-left: 80px;
+}
+div.companyHeader {
+  width: 730px;
+  background-color: white;
+  height: 140px;
+  border-radius: 6px;
+  position: relative;
+}
+section.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+img{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 0;
+}

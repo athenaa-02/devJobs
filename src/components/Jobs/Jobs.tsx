@@ -1,12 +1,15 @@
 import './Jobs.css'
 import { jobsInfo } from '../../data/jobs'
+import { Link } from 'react-router-dom';
+
 
 
 function Jobs() {
   return (
     <main>
       {jobsInfo.map((eachJob) => (
-        <div className='jobPreview' key={eachJob.id}>
+        <Link to={`/jobs/${eachJob.id}`} key={eachJob.id}>
+        <div className='jobPreview' >
           <div className='innerBox'>
           <img src={eachJob.logo}/>
           <p className='generalInfo'>
@@ -18,6 +21,7 @@ function Jobs() {
           <p className='country'>{eachJob.location}</p>
         </div>
         </div>
+        </Link>
       ))}
     </main>
   );
