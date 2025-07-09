@@ -1,11 +1,12 @@
 main{
     width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 65px;
     margin-top: 105px;
     padding: 0 165px;
     height: 100%;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .jobPreview{
@@ -15,15 +16,23 @@ main{
     padding: 30px 25px 25px 25px;
     border-radius: 6px;
     position: relative;
+    cursor: pointer;
+    transition: all 400ms;
 }
+.jobPreview:hover{
+    transform: scale(1.03);
+}
+
 .innerBox{
 width: fit-content;
 }
+
 span{
     font-weight: 400;
     font-size: 16px;
     color: #6E8098;
 }
+
 p.generalInfo{
     display: flex;
     gap: 28px;
@@ -35,10 +44,12 @@ p.country{
     font-weight: 700;
     margin: 40px 0 0 0;
 }
+
 img{
     position: absolute;
     top: -25px;
 }
+
 h2{
     font-weight: 700;
     font-size: 20px;
