@@ -4,6 +4,8 @@ import CompanySite from "../../components/buttons/CompanySite/CompanySite";
 import AboutJob from "../../components/AboutJob/AboutJob";
 import FooterComponent from "../../components/footer/FooterComponent";
 import "./JobDetail.css";
+import Seo from "../../components/Seo";
+import { buildJobJsonLd } from "../../utils/jobJsonLd";
 
 function JobDetail() {
   const { id } = useParams();
@@ -14,6 +16,13 @@ function JobDetail() {
 
   return (
     <>
+      <Seo
+        title={`${job.position} | ${job.company}`}
+        description={job.description.slice(0, 155)}
+        path={`/jobs/${job.id}`}
+        jsonLd={buildJobJsonLd(job)}
+      />
+
       <section className="main">
         <div className="companyHeader">
           <img
@@ -48,9 +57,9 @@ function JobDetail() {
           roleItems={job.role.items}
         ></AboutJob>
       </section>
-      <FooterComponent 
-      position={job.position}
-      company={job.company}
+      <FooterComponent
+        position={job.position}
+        company={job.company}
       ></FooterComponent>
     </>
   );
