@@ -1,4 +1,3 @@
-const SITE = "https://your-domain.com"; // ჩაწერეთ თქვენი რეალური დომენი
 
 export type Job = {
   id: number;
